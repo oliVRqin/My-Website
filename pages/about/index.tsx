@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import Header from '../../components/header/index'
 import Link from 'next/link'
+import Iframe from 'react-iframe'
 
 export default function About() {
   return (
@@ -21,15 +22,23 @@ export default function About() {
             I also reflect a lot, and through my journey 
             of running into new perspectives I will write some of them on this <Link href="/blog">
             <a>blog</a></Link>. Outside of school I love to explore the outdoors, and you could usually find me either going for a run, biking 
-            around Pittsburgh, or playing basketball. I like to experience and learn new things, and am always down for an adventure or two! Some adventures I wish to 
-            experience/goals I want to accomplish in the years ahead are here. <br></br>
+            around Pittsburgh, or playing basketball. I like to experience and learn new things, and am always down for an adventure or two! <br></br>
             <br></br>
-            If you're into amateur photography (mostly of the landscape variety), feel free to check out some photos I take in my free time.<br></br>
+            If you're into amateur photography (mostly of the landscape variety), feel free to check out some <Link href="https://www.instagram.com/oliver_qin_ph/">
+            <a>photos</a></Link> I take in my free time.<br></br>
         </p>
         <h1 className={styles.title}>Reading</h1>
         <ul>
-            <li className={styles.homePageDescription}>Mastery by Robert Greene</li>
+            <li className={styles.homePageDescription}><u>Mastery</u> by Robert Greene</li>
+            <li className={styles.homePageDescription}><u>The Days are Long but the Decades are Short</u> by Sam Altman</li>
+            <li className={styles.homePageDescription}><u>How the Internet Happened: From Netscape to the iPhone</u> by Brian McCollough</li>
         </ul>
+        <h1 className={styles.title}>
+          My Calendar
+        </h1>
+        <br></br>
+        <Iframe className={styles.calendar} url="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=b2xpdmVycWluMjI4QGdtYWlsLmNvbQ&amp;color=%23039BE5&amp;title=My%20Calendar&amp;showTitle=0&amp;showPrint=0&amp;showDate=0&amp;showNav=1&amp;showCalendars=1&amp;showTz=1&amp;showTabs=1&amp;mode=WEEK" scrolling="no" />
+        
       </main>
     </div>
   )

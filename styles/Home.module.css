@@ -3,8 +3,8 @@
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+  /* background-color: black;
+  color: beige; */
 }
 
 .main {
@@ -22,11 +22,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   text-align: center;
-  /* margin-left: 25%;
-  margin-right: 25%; */
 }
 
 .imageHome {
@@ -78,7 +75,6 @@
 
 .card {
   margin-bottom: 1rem;
-  /* flex-basis: 100%; */
   width: 100%;
   padding: 1.5rem;
   text-align: left;
@@ -129,8 +125,6 @@
 
 .navPages {
   display: flex;
-  /* border: 1px solid black; */
-  /* border-bottom: 1px solid black; */
   justify-content: space-between;
   border-bottom: 3px solid black
 }
@@ -143,8 +137,6 @@
 
 .navPages a:hover {
   opacity: 1;
-  /* border-bottom: 3px solid black;
-  margin-bottom: -3px; */
 }
 
 .inputEmail {
@@ -185,6 +177,14 @@
   font-size: 1.25em;
 }
 
+.homePageDescription a {
+  color:#318CE7;
+}
+
+.homePageDescription a:hover {
+  color: blue;
+}
+
 .divDivider {
   margin-bottom: 3%;
   border: 1px solid white;
@@ -195,6 +195,11 @@
   width: 800px;
   height: 600px;
 }
+
+/* Toggle Switch */
+
+
+  
 
 @media (max-width: 1300px) {
   .main {
