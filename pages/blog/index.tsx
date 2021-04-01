@@ -15,7 +15,6 @@ async function getPosts() {
     const res = await fetch(
         `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&fields=title,slug,custom_excerpt,reading_time`
         ).then((res) => res.json())
-        // console.log(res)
         const posts = res.posts
         return posts;
 }
@@ -44,8 +43,8 @@ const Blog: React.FC<{ posts: Post[] }> = (props) => {
                 <div className={styles.grid}>
                     {posts.map((post) => {
                         return (
-                            <Link href="/post/[slug]" as={`/post/${post.slug}`}>
-                                <a key={post.slug} className={styles.card}>
+                            <Link href="/post/[slug]" as={`/post/${post.slug}`} key={post.slug}>
+                                <a className={styles.card}>
                                     <h3 className={styles.blogTitle}>{post.title}</h3>
                                     <p className={styles.homePageDescription}>{post.custom_excerpt}</p>
                                 </a>

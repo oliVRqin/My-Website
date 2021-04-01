@@ -32,10 +32,11 @@ export default function Home() {
           <p className={styles.homePageDescription}>
             Occasionally I write about recent things I've learned and share it with people 
             in my mailing list. Feel free to join below!</p>
-          <form action="">
+          <form action="https://oliverqin.us4.list-manage.com/subscribe/post?u=23cc99083b1bdacebce490aed&amp;id=44a40e085a" 
+          method="post">
               <div className={styles.joinMailForm}>
                   <input type="text" className={styles.inputEmail} placeholder="Email Address"></input>
-                  <button className={styles.joinMailButton}>Join</button>
+                  <input className={styles.joinMailButton} type="submit" value="Join"></input>
               </div>
           </form>
           <br></br>

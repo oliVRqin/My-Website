@@ -14,12 +14,10 @@ const Header = () => {
             document.body.style.background = "black";
             document.body.style.color = "beige";
             localStorage.setItem("isToggled", JSON.stringify(isToggled));
-            console.log(localStorage.getItem("isToggled"));
         } else {
             document.body.style.background = "white";
             document.body.style.color = "black";
             localStorage.setItem("isToggled", JSON.stringify(isToggled));
-            console.log(localStorage.getItem("isToggled"));
         }
     })
     
@@ -37,11 +35,8 @@ const Header = () => {
             <Link href="/about">
                 <a>About</a>
             </Link>
-            {/* <Link href="/calendar">
-                <a>Calendar</a>
-            </Link> */}
-            <input type="checkbox" onClick={() => setIsToggled(!isToggled)} id="bulb"/>
-            <label htmlFor="bulb"></label>
+            <input className={styles.bulbCheckbox} type="checkbox" onClick={() => setIsToggled(!isToggled)} id="bulb"/>
+            <label className={styles.bulbLabel} htmlFor="bulb"></label>
         </div>
     );
 };

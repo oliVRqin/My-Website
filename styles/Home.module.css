@@ -3,8 +3,8 @@
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  /* background-color: black;
-  color: beige; */
+  /* background-color: white;
+  color: black; */
 }
 
 .main {
@@ -154,7 +154,7 @@
 }
 
 .joinMailButton {
-  padding: 3% 5%;
+  padding: 2% 3%;
   border: 1px solid black;
   border-radius: 4px;
   box-sizing: border-box;
@@ -194,12 +194,30 @@
   border-width: 0;
   width: 800px;
   height: 600px;
+} 
+
+.bulbCheckbox {
+  display: none;
 }
 
-/* Toggle Switch */
+.bulbLabel {
+  background-image: url('http://png.findicons.com/files/icons/1588/farm_fresh_web/32/lightbulb.png');
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  margin-top: -1%;
+}
 
+.bulbLabel:hover {
+  opacity: 0.8;
+}
 
-  
+input:checked + .bulbLabel {
+  background-image: url('http://png.findicons.com/files/icons/1588/farm_fresh_web/32/lightbulb_off.png');
+}
 
 @media (max-width: 1300px) {
   .main {
@@ -229,3 +247,11 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 520px) {
+  .navPages {
+    border-bottom: 0px solid black
+  }
+}
+
+
