@@ -3,11 +3,11 @@ import styles from '../../styles/Home.module.css'
 import Header from '../../components/header/index'
 import Image from 'next/image'
 
-export default function Confirmation() {
+export default function Almost() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Confirmation - Oliver Qin</title>
+        <title>Almost - Oliver Qin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
