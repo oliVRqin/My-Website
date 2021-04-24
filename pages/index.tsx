@@ -4,6 +4,7 @@ import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
 import { IconContext } from "react-icons";
 import Header from '../components/header/index'
 import Image from 'next/image'
+import { GA_TRACKING_ID } from '../lib/gtag'
 
 export default function Home() {
   return (
@@ -11,8 +12,16 @@ export default function Home() {
       <Head>
         <title>Home - Oliver Qin</title>
         <link rel="icon" href="/favicon.ico" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
+        <script dangerouslySetInnerHTML={{__html: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+            });`
+            }}
+        />
       </Head>
-      
       <main className={styles.main}>
         <Header />
         <div className={styles.mainHome}>

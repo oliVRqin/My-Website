@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import styles from '../../styles/Home.module.css'
 import Header from '../../components/header/index'
+import { GA_TRACKING_ID } from '../../lib/gtag'
 
 const { BLOG_URL, CONTENT_API_KEY } = process.env
 
@@ -51,6 +52,15 @@ const Post: React.FC<{post: Post}> = (props) => {
             <Head>
                 <title>{post.title} - Oliver Qin</title>
                 <link rel="icon" href="/favicon.ico" />
+                <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
+                <script dangerouslySetInnerHTML={{__html: `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${GA_TRACKING_ID}', {
+                    page_path: window.location.pathname,
+                    });`
+                    }}
+                />
             </Head>
             <div className={styles.main}>
                 <Header />
