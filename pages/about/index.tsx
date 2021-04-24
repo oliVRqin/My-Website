@@ -2,10 +2,7 @@ import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import Header from '../../components/header/index'
 import Link from 'next/link'
-<<<<<<< HEAD
 import { GA_TRACKING_ID } from '../../lib/gtag'
-=======
->>>>>>> 13a2f30fdbd6ab11f3fbf8600b7ba0f729e13f4d
 
 export default function About() {
   return (
