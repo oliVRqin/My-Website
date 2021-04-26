@@ -32,8 +32,8 @@ export default function Projects() {
                       alt="Me"
                       src="/ninja_run.png"
                       layout="intrinsic" 
-                      width="800"
-                      height="480"
+                      width="2000"
+                      height="1200"
                 />
               </div>
               <h3 className={styles.blogTitle}>Ninja Run &rarr;</h3>
@@ -45,8 +45,8 @@ export default function Projects() {
                       alt="Me"
                       src="/scotty_shirts.png"
                       layout="intrinsic" 
-                      width="800"
-                      height="400"
+                      width="2000"
+                      height="1000"
                 />
               </div>
               <h3 className={styles.blogTitle}>Scotty Shirts &rarr;</h3>
