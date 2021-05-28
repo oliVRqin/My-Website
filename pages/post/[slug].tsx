@@ -46,7 +46,6 @@ const Post: React.FC<{post: Post}> = (props) => {
         return <h1>Loading...</h1>
     }
 
-    // console.log(post)
     return (
         <div className={styles.container}>
             <Head>

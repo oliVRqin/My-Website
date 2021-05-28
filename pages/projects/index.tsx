@@ -39,7 +39,7 @@ export default function Projects() {
               <h3 className={styles.blogTitle}>Ninja Run &rarr;</h3>
               <p className={styles.homePageDescription}>A Unity2D game mimicking the Super Mario-style. Collect coins and beat the levels!</p>
             </a>
-            <a href="https://github.com/oliVRqin/E-Commerce-Shopping-Cart-App" className={styles.card}>
+            <a href="https://github.com/oliVRqin/scotty-shirts" className={styles.card}>
               <div className={styles.divDivider}>
                 <Image
                       alt="Scotty Shirts"
@@ -51,32 +51,6 @@ export default function Projects() {
               </div>
               <h3 className={styles.blogTitle}>Scotty Shirts &rarr;</h3>
               <p className={styles.homePageDescription}>An e-commerce shopping cart application selling T-shirts.</p>
-            </a>
-            <a href="https://github.com/oliVRqin/wealth-calculator" className={styles.card}>
-              <div className={styles.divDivider}>
-                <Image
-                      alt="Time-Adjusted Wealth Calculator"
-                      src="/ta_wealth_calc.png"
-                      layout="intrinsic" 
-                      width="2000"
-                      height="1000"
-                />
-              </div>
-              <h3 className={styles.blogTitle}>Time-Adjusted Wealth Calculator &rarr;</h3>
-              <p className={styles.homePageDescription}>A time-adjusted wealth calculator for people of all ages.</p>
-            </a>
-            <a href="" className={styles.card}>
-              {/* <div className={styles.divDivider}>
-                <Image
-                      alt=""
-                      src=""
-                      layout="intrinsic" 
-                      width="800"
-                      height="480"
-                />
-              </div> */}
-              <h3 className={styles.blogTitle}>Space Shooters Virtual Reality Game &rarr;</h3>
-              <p className={styles.homePageDescription}>A “Space Invaders” inspired shooting game in virtual reality with Unity and C#</p>
             </a>
           </div>
       </main>
