@@ -52,6 +52,21 @@ export default function Projects() {
               <h3 className={styles.blogTitle}>Scotty Shirts &rarr;</h3>
               <p className={styles.homePageDescription}>An e-commerce shopping cart application selling T-shirts.</p>
             </a>
+            <a href="https://github.com/oliVRqin/time-adjusted-wealth-calculator" className={styles.card}>
+              <div className={styles.divDivider}>
+                <Image
+                      alt="Wealth Calculator"
+                      src="/ta_wealth_calc.png"
+                      layout="intrinsic" 
+                      width="2000"
+                      height="1000"
+                />
+              </div>
+              <h3 className={styles.blogTitle}>Time-Adjusted Wealth Calculator &rarr;</h3>
+              <p className={styles.homePageDescription}>Traditional measures of "wealth" are usually monetary or asset-based; 
+              however, this calculator adds the extra parameter of time as a way to put things into perspective. 
+              Included is the option to switch currency values for wealth metrics.</p>
+            </a>
           </div>
       </main>
     </div>
