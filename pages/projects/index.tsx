@@ -52,6 +52,19 @@ export default function Projects() {
               <h3 className={styles.blogTitle}>Scotty Shirts &rarr;</h3>
               <p className={styles.homePageDescription}>An e-commerce shopping cart application selling T-shirts.</p>
             </a>
+            <a href="https://github.com/oliVRqin/movie-search" className={styles.card}>
+              <div className={styles.divDivider}>
+                <Image
+                      alt="Movie Search"
+                      src="/movie_search.png"
+                      layout="intrinsic" 
+                      width="2000"
+                      height="1475"
+                />
+              </div>
+              <h3 className={styles.blogTitle}>Movie Search &rarr;</h3>
+              <p className={styles.homePageDescription}>Connected with the OMDb Movie List API to make a movie search app.</p>
+            </a>
             <a href="https://github.com/oliVRqin/time-adjusted-wealth-calculator" className={styles.card}>
               <div className={styles.divDivider}>
                 <Image
