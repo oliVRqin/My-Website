@@ -30,10 +30,10 @@ export default function Projects() {
               <div className={styles.divDivider}>
                 <Image
                       alt="Strava API Workout Visualizer"
-                      src="/strava_project_dark.png"
+                      src="/strava_dark.jpg"
                       layout="intrinsic" 
                       width="2000"
-                      height="1300"
+                      height="1250"
                 />
               </div>
               <h3 className={styles.blogTitle}>Strava API Workout Visualizer &rarr;</h3>
