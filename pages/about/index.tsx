@@ -33,7 +33,7 @@ export default function About() {
             <a>blog</a></Link>. Outside of school I love to explore the outdoors, and you could usually find me either going for a run, biking 
             around Pittsburgh, or playing basketball. I like to experience and learn new things, and am always down for an adventure or two! <br></br>
             <br></br>
-            If you're into amateur photography (mostly of the landscape variety), feel free to check out some <Link href="https://www.instagram.com/oliver_qin_ph/">
+            If you're into amateur photography (mostly of the landscape variety), feel free to check out some <Link href="https://www.instagram.com/olivrqin/">
             <a>photos</a></Link> I take in my free time.<br></br>
         </p>
         <h1 className={styles.title}>Reading</h1>

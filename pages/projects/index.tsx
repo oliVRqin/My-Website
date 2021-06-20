@@ -26,6 +26,19 @@ export default function Projects() {
           Personal Projects
         </h1>
         <div className={styles.grid}>
+            <a href="https://github.com/oliVRqin/strava-api-workout-visualizer" className={styles.card}>
+              <div className={styles.divDivider}>
+                <Image
+                      alt="Strava API Workout Visualizer"
+                      src="/strava_project_dark.png"
+                      layout="intrinsic" 
+                      width="2000"
+                      height="1300"
+                />
+              </div>
+              <h3 className={styles.blogTitle}>Strava API Workout Visualizer &rarr;</h3>
+              <p className={styles.homePageDescription}>An app which uses the Strava API to visualize my Strava exercises. Each color-coded grid represents a day in the past year, and clicking on the grids would yield additional workout info for that particular day.</p>
+            </a>
             <a href="https://github.com/oliVRqin/Ninja-Run" className={styles.card}>
               <div className={styles.divDivider}>
                 <Image
