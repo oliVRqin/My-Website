@@ -14,7 +14,7 @@ type Post = {
 
 async function getPosts() {
     const res = await fetch(
-        `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&fields=title,slug,custom_excerpt,reading_time`
+        `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&fields=title,slug,custom_excerpt&limit=all`
         ).then((res) => res.json())
         const posts = res.posts
         return posts;

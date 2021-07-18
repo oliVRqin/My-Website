@@ -52,6 +52,19 @@ export default function Projects() {
               <h3 className={styles.blogTitle}>Ninja Run &rarr;</h3>
               <p className={styles.homePageDescription}>A Unity2D game mimicking the Super Mario-style. Collect coins and beat the levels!</p>
             </a>
+            <a href="https://github.com/oliVRqin/EyeTestsVR" className={styles.card}>
+              <div className={styles.divDivider}>
+                <Image
+                      alt="Eye Tests VR"
+                      src="/vision_tests.png"
+                      layout="intrinsic" 
+                      width="2000"
+                      height="1200"
+                />
+              </div>
+              <h3 className={styles.blogTitle}>Eye Tests VR &rarr;</h3>
+              <p className={styles.homePageDescription}>An assortment of vision tests (typically administered by an optometrist) which could be conducted via a standalone virtual reality headset.</p>
+            </a>
             <a href="https://github.com/oliVRqin/scotty-shirts" className={styles.card}>
               <div className={styles.divDivider}>
                 <Image
